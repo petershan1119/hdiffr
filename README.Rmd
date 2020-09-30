@@ -1,0 +1,54 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# hdiffr
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+**hdiffr** performs an event history diffusion model that is modified in order to account for heterogeneity in the diffusion process. In addition to modeling characteristics that influnece the direct propensity of a focal actor to adopt, **hdiffr** can also model characteristics of the focal actor that make it more susceptible to the prior adoptions of other actors, as well as characteristics of prior-adopting actors that make them more or less influential on others, and characteristics of the social structure among actors that influence the transmission of influence between actors.
+
+## Author
+
+[Sang Won Han](https://sociology.columbia.edu/content/sang-won-han), Ph.D. candidate in [Sociology](https://sociology.columbia.edu/) at [Columbia University](https://www.columbia.edu)
+
+## Reference
+
+[Strang, David and Nancy Tuma. 1993. "Spatial and Temporal Heterogeneity in Diffusion." *American Journal of Sociology* 99(3): 614-639.](https://www.journals.uchicago.edu/doi/abs/10.1086/230318)
+
+## Installation
+
+The experimental version can be obtained via:
+
+``` r
+devtools::install_github("petershan1119/hdiffr")
+```
+
+## Example
+
+This is a basic example which performs heterogeneous diffusion model with multispell data:
+
+```{r example}
+library(hdiffr)
+data(exampleData)
+result <- hdiffr(data = exampleData, xvars = c('lnsale', 'roa', 'vote'), vvars = 'activistgrp', wvars = 'lnsale', 
+                 zgvars = 'sic', idvar = 'gvkey', multispell = 1, vintercept = 1, hrno = 1)
+```
+
+If you want to see the results, use `summary`:
+
+```{r cars}
+summary(result)
+```

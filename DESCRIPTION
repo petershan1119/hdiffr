@@ -1,0 +1,21 @@
+Package: hdiffr
+Type: Package
+Title: R functions for heterogeneous diffusion model
+Version: 0.1.0
+Date: 2020-09-30
+Authors@R: person("Sang Won", "Han", email = "sh3083@columbia.edu", role = c("aut", "cre"))
+Description: hdiffr performs an event history diffusion model that is
+  modified in order to account for heterogeneity in the diffusion process.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R (>= 4.0.2)
+Imports: 
+    dplyr,
+    tidyr,
+    survival
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
