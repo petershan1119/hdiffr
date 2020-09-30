@@ -29,6 +29,11 @@ Ph.D. candidate in [Sociology](https://sociology.columbia.edu/) at
 Heterogeneity in Diffusion.” *American Journal of Sociology* 99(3):
 614-639.](https://www.journals.uchicago.edu/doi/abs/10.1086/230318)
 
+[Briscoe, Forrest, Abhinav Gupta, and Mark S. Anner. 2015. “Social
+Activism and Practice Diffusion: How Activist Tactics Affect
+Non-Targeted Organizations.” *Administrative Science Quarterly* 60(2):
+300-332.](https://journals.sagepub.com/doi/full/10.1177/0001839215579235?casa_token=C3NsMc_O3ZkAAAAA%3Ajs_seJ2S5xJIgFgkvDT56LZaqgSK-qgb8BFDQR6N9hmB95RlecbTMk-Xkb5Zkn0QB6fRD7xOWJBKK_w)
+
 ## Installation
 
 The experimental version can be obtained via:

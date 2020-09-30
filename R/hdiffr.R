@@ -28,7 +28,8 @@
 #' @return survival model results
 #' @export
 #' @examples
-#' data(example_data)
+#' library(hdiffr)
+#' data(exampleData)
 #' result <- hdiffr(data = data, xvars = c('lnsale', 'roa', 'vote'),
 #'       vvars = 'activistgrp', wvars = 'lnsale', zgvars = 'sic',
 #'       idvar = 'gvkey', multispell = 1, vintercept = 1, hrno = 1)
