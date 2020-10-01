@@ -70,7 +70,8 @@ characteristics of the social structure among actors that influence the transmis
 of influence between actors.
 }
 \examples{
-data(example_data)
+library(hdiffr)
+data(exampleData)
 result <- hdiffr(data = data, xvars = c('lnsale', 'roa', 'vote'),
       vvars = 'activistgrp', wvars = 'lnsale', zgvars = 'sic',
       idvar = 'gvkey', multispell = 1, vintercept = 1, hrno = 1)
