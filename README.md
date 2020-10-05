@@ -23,7 +23,7 @@ influence between actors.
 Ph.D. candidate in [Sociology](https://sociology.columbia.edu/) at
 [Columbia University](https://www.columbia.edu)
 
-## Reference
+## References
 
 [Strang, David and Nancy Brandon Tuma. 1993. “Spatial and Temporal
 Heterogeneity in Diffusion.” *American Journal of Sociology* 99(3):

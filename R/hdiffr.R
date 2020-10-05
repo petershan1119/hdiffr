@@ -25,8 +25,9 @@
 #' @param hrno to display output using coefficients rather than hazard ratios
 #' @param dist to specify distribution for survreg (default is exponential)
 #'
+#' @import dplyr
 #' @return survival model results
-#' @export
+#' @export hdiffr
 #' @examples
 #' library(hdiffr)
 #' data(exampleData)
@@ -145,7 +146,6 @@ hdiffr <- function(data, xvars, vvars = NULL, wvars = NULL, zdvars = NULL, zgvar
     }
 
     # first spell for ID starts with overall i's starttime and other spells start at end of last spell (last adoption)
-    require(dplyr)
     spell_st <- data.frame(data_wf_gi %>% group_by(eval(as.symbol(idvar))) %>% mutate(V1 = dplyr::lag(ET_j, n = 1, default = NA)), stringsAsFactors = FALSE)
     data_wf_gi <- cbind(data_wf_gi, spell_st = spell_st$V1)
     data_wf_gi$spell_st[which(c(TRUE, diff(data_wf_gi[[idvar]]) != 0))] <- data_wf_gi$ST[which(c(TRUE, diff(data_wf_gi[[idvar]]) != 0))]
