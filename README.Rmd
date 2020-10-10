@@ -45,8 +45,9 @@ This is a basic example which performs heterogeneous diffusion model with multis
 ```{r example}
 library(hdiffr)
 data(exampleData)
-result <- hdiffr(data = exampleData, xvars = c('lnsale', 'roa', 'vote'), vvars = 'activistgrp', wvars = 'lnsale', 
-                 zgvars = 'sic', idvar = 'gvkey', multispell = 1, vintercept = 1, hrno = 1)
+result <- hdiffr(data = exampleData, xvars = c('lnsale', 'roa', 'vote'), vvars = 'activistgrp', 
+                 wvars = 'lnsale', zgvars = 'sic', idvar = 'gvkey',
+                 multispell = 1, vintercept = 1, hrno = 1)
 ```
 
 If you want to see the results, use `summary`:

@@ -50,8 +50,9 @@ with multispell data:
 ``` r
 library(hdiffr)
 data(exampleData)
-result <- hdiffr(data = exampleData, xvars = c('lnsale', 'roa', 'vote'), vvars = 'activistgrp', wvars = 'lnsale', 
-                 zgvars = 'sic', idvar = 'gvkey', multispell = 1, vintercept = 1, hrno = 1)
+result <- hdiffr(data = exampleData, xvars = c('lnsale', 'roa', 'vote'), vvars = 'activistgrp', 
+                 wvars = 'lnsale', zgvars = 'sic', idvar = 'gvkey',
+                 multispell = 1, vintercept = 1, hrno = 1)
 #> Warning in hdiffr(data = exampleData, xvars = c("lnsale", "roa", "vote"), :
 #> Warning: More than one observation per ID detected.
 #> Loading required package: dplyr
