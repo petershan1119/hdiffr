@@ -79,8 +79,8 @@ hdiffr <- function(data, xvars, vvars = NULL, wvars = NULL, zdvars = NULL, zgvar
             data_gi[[paste(zgvars[i], "j", sep = "_")]] <- data_gi[[zgvars[i]]]
         }
     }
-    gi_include <- grep("[(_j$)]", colnames(data_gi))
-    data_gi_2 <- cbind(all_case_2 = data_gi[, c("all_case")], data_gi[, c(gi_include)])
+    gi_include <- grep("\\_j$", colnames(data_gi))
+    data_gi_2 <- cbind(all_case = data_gi[, c("all_case")], data_gi[, c(gi_include)])
 
     data_gi_2 <- data_gi_2[order(data_gi_2$ET_j), ]
 
